@@ -1,0 +1,45 @@
+<link rel="import" href="../../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../../src/list-container/list-container.html">
+
+<dom-module id="container-content">
+    <template>
+        <style>
+            h2 {
+                margin: 0;
+            }
+
+            .home {
+                display: block;
+            }
+        </style>
+
+        <div class = "home">
+            <template is="dom-repeat" items="[[arraySearchContainer]]" as="list">
+                <list-container
+                    url = "[[list.url]]" 
+                    search-status = "[[list.search-status]]" 
+                    tittle = "[[list.tittle]]"
+                    quantity = "[[list.quantity]]"
+                ></list-container>
+            </template>
+        </div>
+
+    </template>
+    <script>
+        class ContainerContent extends Polymer.Element{
+            static get is () { return 'container-content';}
+            static get properties() {
+                return {
+                    arraySearchContainer: {
+                        type: Array
+                    }
+                };
+            }
+
+            connectedCallback() {
+                super.connectedCallback();
+            }
+        }
+        customElements.define(ContainerContent.is,ContainerContent);
+    </script>
+</dom-module>

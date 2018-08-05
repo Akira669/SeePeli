@@ -1,0 +1,8 @@
+.DS_Store
+/*/.DS_Store
+package-lock.json
+/node_modules
+/*/yarn.lock
+/*/error_log
+/bower_components
+
