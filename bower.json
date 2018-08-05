@@ -1,6 +1,6 @@
 {
-  "name": "netflix",
-  "description": "replicate netflix",
+  "name": "SeePeli",
+  "description": "replicate SeePeli",
   "main": "index.html",
   "dependencies": {
     "polymer": "Polymer/polymer#^2.0.0"
